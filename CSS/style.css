@@ -248,6 +248,10 @@
    
 }
 
+.card-image{
+    height: 18vh;
+}
+
 .my-btn{
     border:2px solid #ff004f;
 }
