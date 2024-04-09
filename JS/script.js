@@ -185,3 +185,27 @@ for(j=0;j<tabcontents.length;j++){
   document.querySelector('div.active-tab').remove('active-link')
   tabcontents[1].getElementById(tabcontents).classList.add('active-tab')
 }
+
+
+// ------------------------search bar----------------------------//
+
+
+const search = () => {
+  const search_item = document.getElementById('search-item').value.toUpperCase();
+  const col = document.querySelectorAll('.col');
+  // const tab_card=document.getElementById('tab-cards')
+
+
+  for (let i = 0; i < col.length; i++) {
+    let match = col[i].querySelector('h3');
+    if (match) {
+      let text_value = match.textContent || match.innerHTML || match.innerText;
+      if (text_value.toUpperCase().indexOf(search_item) > -1) {
+        col[i].style.display = "";
+  
+      } else {
+        col[i].style.display = "none";
+      }
+    }
+  }
+}
