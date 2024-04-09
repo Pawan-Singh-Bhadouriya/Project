@@ -15,11 +15,11 @@
     <link rel="icon" href="./images/spy1.png" sizes="80*80">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <script src="/JS/script.js"></script>
+    <script src="./JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src=https://kit.fontawesome.com/20f528de9a.js crossorigin=”anonymous”></script>
+    <script src="https://kit.fontawesome.com/20f528de9a.js" crossorigin=”anonymous”></script>
 
 </head>
 
@@ -34,7 +34,7 @@
                         <div class="row" id="search-box">
 
                             <div class="input-group">
-                                <input type="search" class="form-control" placeholder="Search here.....">
+                                <input type="search" class="form-control" id="search-item" placeholder="Search here....." onkeyup="search()">
                                 <span class="input-group-text"><i class="bi bi-search"></i></span>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
 
 
 
-        <div class="under-10">
+        <div class="under-10 under-20">
             <div class="row" id="all-product">
                 <h4 class="col-12" id="heading">Mobiles Under 20,000</h4>
             </div>
@@ -188,7 +188,7 @@
             </div>
         </div>
 
-        <div class="under-10">
+        <div class="under-10 under-30">
             <div class="row" id="all-product">
                 <h4 class="col-12" id="heading">Mobiles Under 30,000</h4>
             </div>
@@ -247,8 +247,9 @@
             </div>
         </div>
 
-
 </div>
+
 </body>
 
-</html>
+</html> 
+
