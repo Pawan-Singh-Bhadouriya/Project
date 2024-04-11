@@ -1,6 +1,32 @@
+/* code having star comments are newly added */
+
+:root{ /* * */
+    --primary-color: #212529;
+    --secondary-color:#ffffff;
+    --shadow-color:black;
+
+    /* --primary-color: #ffffff;
+    --secondary-color:#000000;
+    --shadow-color:rgb(204, 204, 204); */
+
+}
+
+.light-theme{
+    --primary-color: #ffffff;
+    --secondary-color:#000000;
+    --shadow-color:rgb(204, 204, 204);
+}
+
+body{ /* * */
+    background-color: var(--primary-color);
+}
+
 /* -------------------navbar--------------------------------- */
+nav{ /* * */
+    background-color: var(--primary-color); 
+}
 .input-group-text{
-    color: white;
+    color: var(--secondary-color);
     background-color: black;
     border-color: black;
 }
@@ -13,7 +39,7 @@
     /* background-color: white;
     height: 50px;
     margin-top: 64px; */
-    background-color: white;
+    background-color: var(--secondary-color);
     height: 3px;
     position: relative;
     margin-top: 64px;
@@ -27,6 +53,7 @@
 #brand a{
     position: relative;
     right: 48px;
+    color: var(--secondary-color);  /* * */
 }
 
 #nav2{
@@ -36,6 +63,19 @@
     font-size: 1.1em;
     /* word-spacing: 10px; */
 }
+#nav2 a{
+     /* * */
+     color: var(--secondary-color);
+}
+
+.navbar-toggler{ /* * */
+    background-color: white;
+}
+
+.navbar-toggler-icon{ /* * */
+    background-color: white;
+}
+
 #demo a{
     /* padding: 5px; */
     /* padding-right: 95px; */
@@ -45,13 +85,14 @@
 #newnav{
     position: relative;
     top: 35px;
-    box-shadow:  -9px 0px 20px  white;
+    box-shadow:  -9px 0px 20px  var(--secondary-color);
     z-index: 1;
     /* width: 100%; */
 }
 
-
-
+.search{
+    color: white;
+}
 
 /* ----------------------------container------------------------------------- */
 #icons{
@@ -65,14 +106,14 @@
     width: 96%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
-    box-shadow: 0px 0px 15px -3px black;
+    box-shadow: 0px 0px 15px -3px var(--shadow-color);
 
 
 }
 
 
 .card i {
-    color: white;
+    color: var(--secondary-color);
     font-size: 49px; 
     /* display: grid;
     grid-template-columns: repeat(auto-fit,minmax(49px, 1fr)); */
@@ -85,6 +126,7 @@
     aspect-ratio: 3/2;
     height: 100px;
     width: 150px;
+    color: var(--secondary-color);
 }
 
 .card{
@@ -162,7 +204,7 @@
 }
 
 #heading{
-    color: white;
+    color: var(--secondary-color);
     margin: 28px;
     width: 92%;
 }
@@ -175,7 +217,7 @@
     position: relative;
     top: 50px;
     width: 96%;
-    box-shadow: 0px 0px 15px -3px black;
+    box-shadow: 0px 0px 15px -3px var(--shadow-color);
 
     
     /* background: #242020; */
@@ -189,7 +231,7 @@
     font-size: 1.1em;
 }
 .horiz2{
-    background-color: white;
+    background-color: var(--secondary-color);
     height: 3px;
     position: relative;
     /* margin-top: 64px; */
@@ -241,11 +283,11 @@
 }
 
 #tab-cards{
-    background-color: #212529;
-    box-shadow: 0px 0px 15px -3px black;
-    color: white;
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 15px -3px var(--shadow-color);
+    color: var(--secondary-color);
     margin-bottom: 20px;
-   
+   /* overflow-x: scroll; */
 }
 
 .card-image{
@@ -265,7 +307,7 @@
 .top-mobiles{
     top: 56px;
     position: relative;
-    box-shadow: 0px 0px 15px -3px black;
+    box-shadow: 0px 0px 15px -3px var(--shadow-color);
     border-radius: 35px;
     width: 96%;
 }
@@ -281,7 +323,7 @@
         /* top: 50px; */
         width: 96%;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(332px, 1fr));
         /* box-shadow: 0px 0px 15px 3px black; */
     
     
@@ -291,18 +333,18 @@
 
 /* -----------------------footer---------------------------*/
 .white{
-    color: white;
+    color: var(--secondary-color);
 }
 footer{
     position: relative;
     top: 100px;
     height: 10vh;
-    box-shadow:0px 1px 15px black;
+    box-shadow:0px 1px 15px var(--shadow-color);
 }
 
 /* -------------------------mobile.html-------------------------------*/
 .under-10{
-    box-shadow: 0px 0px 15px -3px black;
+    box-shadow: 0px 0px 15px -3px var(--shadow-color);
     border-radius: 35px;
     width: 100%;
 }
@@ -314,3 +356,9 @@ footer{
 
 
 
+/* ----------------light-dark-mode---------------------- */
+#mode{
+    width: 30px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
