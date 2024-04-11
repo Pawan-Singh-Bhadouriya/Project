@@ -152,10 +152,10 @@
 // 	console.error(error);
 // }
 
-let p = fetch("https://shopee.com.my/HDY-Kids-Magic-Electric-Water-Blowing-Bubbles-Soap-Machine-Toys-Kid-Automatic-Musical-Bubble-Children-Toy-Girl-Gifts-i.79530172.1916268308?ads_keyword=bubble%20machine&adsid=29224283&campaignid=13628578&position=0")
-p.then((response)=>{
-  return response.json()
-}).then((response)=>{console.log(response)})
+// let p = fetch("https://shopee.com.my/HDY-Kids-Magic-Electric-Water-Blowing-Bubbles-Soap-Machine-Toys-Kid-Automatic-Musical-Bubble-Children-Toy-Girl-Gifts-i.79530172.1916268308?ads_keyword=bubble%20machine&adsid=29224283&campaignid=13628578&position=0")
+// p.then((response)=>{
+//   return response.json()
+// }).then((response)=>{console.log(response)})
 
 
 
@@ -186,7 +186,6 @@ for(j=0;j<tabcontents.length;j++){
   tabcontents[1].getElementById(tabcontents).classList.add('active-tab')
 }
 
-
 // ------------------------search bar----------------------------//
 
 
@@ -208,4 +207,32 @@ const search = () => {
       }
     }
   }
+}
+
+
+//----------- dark-theme------
+const modes=()=>{
+var mode = document.getElementById('mode')
+const brand_img = document.getElementById('img')
+mode.onclick = function(){
+  document.body.classList.toggle('light-theme');
+  if(document.body.classList.contains('dark-theme')){
+    // brand_img.style.filter="grayscale(100%)brightness(0%)";
+    // mode.classList.toggle('bi bi-sun')
+  }
+  // Get the current filter value
+  var currentFilter = brand_img.style.filter;
+  
+  // Check if the current filter is black
+  if (currentFilter.includes("grayscale(100%)") && currentFilter.includes("brightness(0%)")) {
+    // Change to white
+    brand_img.style.filter = "grayscale(0%) brightness(100%)";
+  } else {
+    // Change to black
+    brand_img.style.filter = "grayscale(100%) brightness(0%)";
+  }
+}
+
+  
+
 }
