@@ -158,49 +158,7 @@
 // }).then((response)=>{console.log(response)})
 
 
-//amazon data scrapper
-let data = null;
 
-async function fetchAmazonData() {
-    const url = 'https://real-time-amazon-data.p.rapidapi.com/search?query=Phone&page=1&country=US&category_id=aps';
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '4308455532mshf236c29a3b2c97ep171863jsn1bf99e393059',
-            'X-RapidAPI-Host': 'real-time-amazon-data.p.rapidapi.com'
-        }
-    };
-
-    try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        data = result.data;
-        console.log(data);
-
-        // Call a function or execute code that relies on the fetched data
-        printProductPrices(data);
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-fetchAmazonData();
-
-
-
-
-
-
-
-// Function to print product prices
-function printProductPrices(data) {
-    if (data && Array.isArray(data.products)) {
-        const productPrices = data.products.map(product => product.product_price);
-        console.log(productPrices);
-    } else {
-        console.error('Invalid data format');
-    }
-}
 
 
 // to switch between the tabs
