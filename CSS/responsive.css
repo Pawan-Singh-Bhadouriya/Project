@@ -84,7 +84,8 @@
 
     #tab-cards{
         height: 32vh;
-        width: 75%;
+        /* width: 75%; */
+        width: 100%;
         
     }
 
@@ -155,7 +156,7 @@
         grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
         /* margin-right: 70px; */
         position: relative;
-        right: 30px;
+        right: 64px;
 
     }
     .card-size{
@@ -186,7 +187,26 @@
         }
 }
 
+@media  screen and (max-width:380px) {
 
+    #tab-cards{
+        height: 32vh;
+        /* width: 75%; */
+        width: 66%;
+        
+    }
+
+    .active-tab {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
+        /* margin-right: 70px; */
+        position: relative;
+        right: 18px;
+
+    }
+
+
+}
 /* @media screen and (max-width:380px) {
     #all-card-item {
         grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
