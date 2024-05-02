@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:470px) {
     header{
      height: 68vh;
     }
@@ -20,10 +20,10 @@
          right: 174px;
      }
      #newnav{
-         top: 85px;
+         top: 110px;
      }
      #brand a {
-         right:94px;
+         right:81px;
      }
      #brand img{
          position: relative;
@@ -33,6 +33,45 @@
      #product-details{
         grid-template-columns:   repeat(auto-fit,minmax(150px, 1fr));
     }
+
+    .my-btn{
+        font-size: 0.74em;
+    }
+
+    .title{
+        font-size: 0.84em;
+    }
+    .active-tab{
+        position: relative;
+        right: 75px;
+    }
+    .card-image{
+        height: 13vh;
+    }
+
+    #icons{
+        top: -200px;
+    }
+
+    #product{
+        top: -160px;
+    }
+
+    .top-mobiles{
+        top: -110px;
+    }
+
+    #tab-cards{
+        height: 33vh;
+        width: 111%;
+        margin-left: 25px;
+    }
+
+    #mode{
+        position: relative;
+        top: -113px;
+        left: 456px;
+    }
  }
 
 
@@ -41,6 +80,14 @@
     /* #search {
         display: none;
     } */
+
+
+    #tab-cards{
+        height: 32vh;
+        width: 75%;
+        
+    }
+
 
     #all-card-item {
         grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
@@ -108,7 +155,7 @@
         grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
         /* margin-right: 70px; */
         position: relative;
-        right: 13px;
+        right: 30px;
 
     }
     .card-size{
@@ -189,6 +236,13 @@
     /* #search {
         display: none;
     } */
+
+
+    #tab-cards{
+        height: 32vh;
+        width: 75%;
+        
+    }
 
     #all-card-item {
         grid-template-columns: repeat(auto-fit, minmax(167px, 1fr));
@@ -292,6 +346,12 @@
     }
     #newnav {
         width: 101%;
+    }
+
+    #tab-cards{
+        height: 32vh;
+        width: 75%;
+        
     }
     /* #search {
         display: none;
