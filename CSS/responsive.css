@@ -83,7 +83,7 @@
 
 
     #tab-cards{
-        height: 32vh;
+        height: 29vh;
         /* width: 75%; */
         width: 100%;
         
@@ -174,7 +174,7 @@
         font-size: 0.9em;
     }
     .card-image{
-        height: 13vh;
+        height: 11vh;
     }
     #mode{
         position: relative;
